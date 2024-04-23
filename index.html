@@ -11,31 +11,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand roboto-black nav-name" href="index.html"><div class="box-dot"></div>Harvy Ocampo   <p class="roboto-thin">/ Web Designer</p></a>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                      <a class="roboto-thin nav-link active" aria-current="page" href="index.html">ABOUT ME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="roboto-thin nav-link" href="resume.html">RESUME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="roboto-thin nav-link" href="#">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="roboto-thin nav-link" href="">CONTACT</a>
-                    </li>
-                  </ul>
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand roboto-black nav-name" href="index.html"><div class="box-dot"></div>Harvy Ocampo<p class="roboto-thin">/ FRONT-END</p></a>
+            <!-- toggler -->
+          <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <!-- sidebar -->
+          <div class="sidebar offcanvas offcanvas-start d-flex justify-content-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- sidebar header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="roboto-black offcanvas-title" id="offcanvasNavbarLabel">Harvy Ocampo</h5>
+              <!-- close button -->
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <!-- sidebar body -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="roboto-thin nav-link active" aria-current="page" href="index.html">ABOUT ME</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="roboto-thin nav-link" href="resume.html">RESUME</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="roboto-thin nav-link" href="#">PROJECTS</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="roboto-thin nav-link" href="#">CONTACT</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+      <!-- Navbar -->
     <div class="container">
         <div class="intro-underlay">
             <div class="left-underlay">
@@ -46,7 +59,7 @@
                         <img src="./assets/image/profile.jpg" alt="">
                         <h1 class="roboto-black">Harvy <br> Ocampo</h1>
                         <div class="profile-line"></div>
-                        <p class="roboto-thin">WEB DESIGNER</p>
+                        <p class="roboto-thin">FRONT-END</p>
                         <div class="profile-footer">
                             <footer>
                                 <ul class="profile-footer-icons">
